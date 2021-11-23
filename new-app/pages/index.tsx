@@ -29,14 +29,6 @@ function Home(): JSX.Element {
                   <a id="tribute-link" href="" target="_blank">About</a>
                   <a id="tribute-link1" href="" target="_blank">Info</a>
               </div>
-          </section>
-          <section>
-              <div className="second-section">
-                  <p className="second-title1">March 25, 1914 Born in Cresco, Iowa</p>
-                  <p id="text1">Norman Borlaug was born to Henry Oliver (1889–1971) and Clara (Vaala) Borlaug (1888–1972) on his grandparents farm in Saude in 1914, the first of four children. His three sisters were Palma Lillian (Behrens; 1916–2004), Charlotte (Culbert; b. 1919) and Helen (b. 1921).</p>
-
-              </div>
-          </section>
             <br></br>
       </div><Script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></Script></>
   )
