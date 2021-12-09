@@ -2,7 +2,6 @@ import { FC, useState } from "react";
 import Information from "../../resource/info";
 import * as Style from "./styled";
 import NavBar from "../NavBar";
-import { Arrows } from "../Arrows";
 import { Year } from "./Year/index";
 import { EventBox } from "./Box";
 import { Paragraphe } from "./Paragraph";
@@ -61,7 +60,6 @@ export const InfoContent: FC<Props> = ({
         <h3 className="motto">{motto}</h3>
         <Year id={id} year={year} />
       </div>
-      <Arrows idInfo={id} />
     </Style.StyledFirstPage>
   ) : id > 0 && id < Information.length - 1 ? (
     //second to penultimate page
@@ -74,7 +72,6 @@ export const InfoContent: FC<Props> = ({
       </div>
       <Year id={id} year={year} />
       <ImageComponent id={id} image={image} alt={alt} />
-      <Arrows idInfo={id} />
     </Style.StyledPages>
   ) : id + 1 == Information.length ? (
     //last page
@@ -86,7 +83,6 @@ export const InfoContent: FC<Props> = ({
       <a className="linkWikipedia" href={link} target="_blank" rel="noreferrer">
         {linkDescription}
       </a>
-      <Arrows idInfo={id} />
       <Footer />
     </Style.StyledLastPage>
   ) : (
